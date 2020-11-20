@@ -30,9 +30,9 @@ namespace eBlank
 		private void InitializeComponent()
 		{
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.button1 = new System.Windows.Forms.Button();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.panel3 = new System.Windows.Forms.Panel();
-			this.button1 = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -41,17 +41,32 @@ namespace eBlank
 			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(25)))), ((int)(((byte)(50)))));
 			this.panel1.Controls.Add(this.button1);
 			this.panel1.Location = new System.Drawing.Point(-1, 0);
-			this.panel1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+			this.panel1.Margin = new System.Windows.Forms.Padding(0);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(801, 24);
 			this.panel1.TabIndex = 0;
+			this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
 			this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+			// 
+			// button1
+			// 
+			this.button1.FlatAppearance.BorderSize = 0;
+			this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button1.Image = global::eBlank.Properties.Resources.cancel;
+			this.button1.Location = new System.Drawing.Point(777, 0);
+			this.button1.Margin = new System.Windows.Forms.Padding(0);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(23, 23);
+			this.button1.TabIndex = 0;
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// panel2
 			// 
 			this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(25)))), ((int)(((byte)(50)))));
 			this.panel2.Location = new System.Drawing.Point(-1, 24);
-			this.panel2.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+			this.panel2.Margin = new System.Windows.Forms.Padding(0);
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(160, 428);
 			this.panel2.TabIndex = 1;
@@ -60,24 +75,10 @@ namespace eBlank
 			// 
 			this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(38)))), ((int)(((byte)(76)))));
 			this.panel3.Location = new System.Drawing.Point(159, 24);
-			this.panel3.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+			this.panel3.Margin = new System.Windows.Forms.Padding(0);
 			this.panel3.Name = "panel3";
 			this.panel3.Size = new System.Drawing.Size(641, 428);
 			this.panel3.TabIndex = 0;
-			// 
-			// button1
-			// 
-			this.button1.FlatAppearance.BorderSize = 0;
-			this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			
-			this.button1.Location = new System.Drawing.Point(777, 0);
-			this.button1.Margin = new System.Windows.Forms.Padding(0);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(23, 23);
-			this.button1.TabIndex = 0;
-			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// Main
 			// 
@@ -89,6 +90,7 @@ namespace eBlank
 			this.Controls.Add(this.panel1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "Main";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Main";
 			this.panel1.ResumeLayout(false);
 			this.ResumeLayout(false);
