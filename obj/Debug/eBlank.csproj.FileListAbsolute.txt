@@ -18,3 +18,11 @@ C:\Users\Ganju\Desktop\eBlank\obj\Debug\eBlank.csproj.GenerateResource.cache
 C:\Users\Ganju\Desktop\eBlank\obj\Debug\eBlank.csproj.CoreCompileInputs.cache
 C:\Users\Ganju\Desktop\eBlank\obj\Debug\eBlank.exe
 C:\Users\Ganju\Desktop\eBlank\obj\Debug\eBlank.pdb
+C:\Users\Ganju\Desktop\eBlank\obj\Debug\eBlank.Main.resources
+C:\Users\Ganju\Desktop\eBlank\obj\Debug\eBlank.exe.config
+C:\Users\Ganju\Desktop\eBlank\bin\Debug\MySql.Data.dll
+C:\Users\Ganju\Desktop\eBlank\bin\Debug\MySql.Data.Entity.EF5.dll
+C:\Users\Ganju\Desktop\eBlank\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Ganju\Desktop\eBlank\bin\Debug\MySql.Fabric.Plugin.dll
+C:\Users\Ganju\Desktop\eBlank\bin\Debug\MySql.Web.dll
+C:\Users\Ganju\Desktop\eBlank\obj\Debug\eBlank.csproj.CopyComplete
