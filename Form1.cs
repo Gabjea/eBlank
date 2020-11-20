@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace eBlank
 {
-	public partial class Main : Form
+	public partial class Form1 : Form
 	{
-		public Main()
+		public Form1()
 		{
 			InitializeComponent();
 		}
