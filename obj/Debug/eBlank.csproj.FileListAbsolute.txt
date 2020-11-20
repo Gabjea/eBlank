@@ -1,0 +1,10 @@
+C:\Users\bluescreen\Desktop\eBlank\bin\Debug\eBlank.exe.config
+C:\Users\bluescreen\Desktop\eBlank\bin\Debug\eBlank.exe
+C:\Users\bluescreen\Desktop\eBlank\bin\Debug\eBlank.pdb
+C:\Users\bluescreen\Desktop\eBlank\obj\Debug\eBlank.csprojAssemblyReference.cache
+C:\Users\bluescreen\Desktop\eBlank\obj\Debug\eBlank.Login.resources
+C:\Users\bluescreen\Desktop\eBlank\obj\Debug\eBlank.Properties.Resources.resources
+C:\Users\bluescreen\Desktop\eBlank\obj\Debug\eBlank.csproj.GenerateResource.cache
+C:\Users\bluescreen\Desktop\eBlank\obj\Debug\eBlank.csproj.CoreCompileInputs.cache
+C:\Users\bluescreen\Desktop\eBlank\obj\Debug\eBlank.exe
+C:\Users\bluescreen\Desktop\eBlank\obj\Debug\eBlank.pdb
