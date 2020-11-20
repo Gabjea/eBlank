@@ -121,23 +121,13 @@
   <data name="e1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-<<<<<<< HEAD
-  <data name="cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-=======
   <data name="BUTON1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BUTON1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
->>>>>>> f3586a1264fc517c1ddd4329fbcfd53e9416cf4c
   </data>
   <data name="cadran" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cadran.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-<<<<<<< HEAD
-  <data name="cancel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cancel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-=======
   <data name="lacat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lacat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
->>>>>>> f3586a1264fc517c1ddd4329fbcfd53e9416cf4c
   </data>
 </root>
