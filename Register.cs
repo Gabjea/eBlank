@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace eBlank
 {
-	public partial class Form1 : Form
+	public partial class Register : Form
 	{
-		public Form1()
+		public Register()
 		{
 			InitializeComponent();
+		}
+
+		private void Register_Load(object sender, EventArgs e)
+		{
+
 		}
 	}
 }

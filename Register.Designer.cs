@@ -1,7 +1,7 @@
 ﻿
 namespace eBlank
 {
-	partial class Form1
+	partial class Register
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -29,13 +29,20 @@ namespace eBlank
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
+			this.SuspendLayout();
+			// 
+			// Register
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Text = "Form1";
+			this.Name = "Register";
+			this.Text = "Register";
+			this.Load += new System.EventHandler(this.Register_Load);
+			this.ResumeLayout(false);
+
 		}
 
 		#endregion
 	}
 }
-
