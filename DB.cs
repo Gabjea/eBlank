@@ -52,5 +52,54 @@ namespace eBlank
         {
             return connection.State == System.Data.ConnectionState.Open;
         }
+        public String ReadData(string databaseCommand, string[] param, string[] val, string sel)
+        {
+            try
+            {
+                connection.Open();
+                MySqlCommand command = new MySqlCommand(databaseCommand, connection);
+                for (int i = 0; i < param.Length; i++)
+                    command.Parameters.AddWithValue(param[i], val[i]);
+                using (MySqlDataReader reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        return reader[sel].ToString();
+                    }
+                    else return null;
+                }
+
+            }
+            finally
+            {
+                if (connection.State != System.Data.ConnectionState.Closed)
+                    connection.Close();
+
+
+            }
+        }
+        public void InsertData(string databaseCommand, string[] param, string[] val)
+        {
+            try
+            {
+                connection.Open();
+                MySqlCommand command = new MySqlCommand(databaseCommand, connection);
+                for (int i = 0; i < param.Length; i++)
+                    command.Parameters.AddWithValue(param[i], val[i]);
+                int result = command.ExecuteNonQuery();
+
+            }
+			catch(MySqlException ex)
+			{
+
+			}
+            finally
+            {
+                if (connection.State != System.Data.ConnectionState.Closed)
+                    connection.Close();
+
+
+            }
+        }
     }
 }
