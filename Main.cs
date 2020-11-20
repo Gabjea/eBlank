@@ -16,12 +16,5 @@ namespace eBlank
 		{
 			InitializeComponent();
 		}
-
-		private void Main_Load(object sender, EventArgs e)
-		{
-			DB con = new DB();
-			con.OpenCon();
-			MessageBox.Show(con.isOpen().ToString());
-		}
 	}
 }
