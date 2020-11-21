@@ -27,3 +27,7 @@ C:\Users\Ganju\Desktop\eBlank\bin\Debug\MySql.Fabric.Plugin.dll
 C:\Users\Ganju\Desktop\eBlank\bin\Debug\MySql.Web.dll
 C:\Users\Ganju\Desktop\eBlank\obj\Debug\eBlank.csproj.CopyComplete
 C:\Users\Ganju\Desktop\eBlank\obj\Debug\eBlank.Home.resources
+C:\Users\Ganju\Desktop\eBlank\obj\Debug\eBlank.Catalogue.resources
+C:\Users\Ganju\Desktop\eBlank\obj\Debug\eBlank.Classes.resources
+C:\Users\Ganju\Desktop\eBlank\obj\Debug\eBlank.Schedule.resources
+C:\Users\Ganju\Desktop\eBlank\obj\Debug\eBlank.Todo.resources
