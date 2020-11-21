@@ -110,7 +110,6 @@ namespace eBlank
                 usr.Function = con.ReadData(com, param, vals, "function");
                 usr.Name = con.ReadData(com, param, vals, "username");
                 usr.School = con.ReadData(com, param, vals, "school");
-                usr.Id = con.ReadData(com, param, vals, "id");
                 thread = new Thread(OpenForm);
                 thread.SetApartmentState(ApartmentState.STA);
 
