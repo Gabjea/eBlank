@@ -161,6 +161,8 @@
     <None Include="Resources\BUTON1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\LOGO.png" />
+    <None Include="Resources\Asset 1%402x.png" />
     <Content Include="Resources\cancel.png" />
     <None Include="Resources\LOGO2.png" />
     <None Include="Resources\LOGO1.png" />

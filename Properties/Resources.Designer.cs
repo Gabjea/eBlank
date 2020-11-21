@@ -63,6 +63,16 @@ namespace eBlank.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Asset_1_2x {
+            get {
+                object obj = ResourceManager.GetObject("Asset 1@2x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BUTON1 {
             get {
                 object obj = ResourceManager.GetObject("BUTON1", resourceCulture);
@@ -106,6 +116,16 @@ namespace eBlank.Properties {
         internal static System.Drawing.Bitmap lacat {
             get {
                 object obj = ResourceManager.GetObject("lacat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LOGO {
+            get {
+                object obj = ResourceManager.GetObject("LOGO", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

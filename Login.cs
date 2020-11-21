@@ -60,7 +60,7 @@ namespace eBlank
 
 		private void Login_Load(object sender, EventArgs e)
 		{
-            this.ActiveControl = label1;
+            this.ActiveControl = pictureBox6;
         }
 
 		private void Email_Enter(object sender, EventArgs e)

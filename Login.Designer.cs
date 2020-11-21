@@ -31,10 +31,10 @@ namespace eBlank
         {
 			this.Email = new System.Windows.Forms.TextBox();
 			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.label1 = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.login_button = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
+			this.pictureBox6 = new System.Windows.Forms.PictureBox();
 			this.pictureBox3 = new System.Windows.Forms.PictureBox();
 			this.button2 = new System.Windows.Forms.Button();
 			this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -42,6 +42,7 @@ namespace eBlank
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.panel1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -80,17 +81,6 @@ namespace eBlank
 			this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
 			this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
 			// 
-			// label1
-			// 
-			this.label1.Font = new System.Drawing.Font("Montserrat", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.ForeColor = System.Drawing.Color.White;
-			this.label1.Location = new System.Drawing.Point(79, 47);
-			this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(119, 33);
-			this.label1.TabIndex = 8;
-			this.label1.Text = "eBlank";
-			// 
 			// panel1
 			// 
 			this.panel1.Controls.Add(this.button2);
@@ -123,6 +113,15 @@ namespace eBlank
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(0, 18);
 			this.label2.TabIndex = 14;
+			// 
+			// pictureBox6
+			// 
+			this.pictureBox6.Image = global::eBlank.Properties.Resources.LOGO;
+			this.pictureBox6.Location = new System.Drawing.Point(75, 49);
+			this.pictureBox6.Name = "pictureBox6";
+			this.pictureBox6.Size = new System.Drawing.Size(123, 63);
+			this.pictureBox6.TabIndex = 15;
+			this.pictureBox6.TabStop = false;
 			// 
 			// pictureBox3
 			// 
@@ -202,12 +201,12 @@ namespace eBlank
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(38)))), ((int)(((byte)(76)))));
 			this.ClientSize = new System.Drawing.Size(270, 395);
+			this.Controls.Add(this.pictureBox6);
 			this.Controls.Add(this.pictureBox3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.login_button);
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.pictureBox5);
-			this.Controls.Add(this.label1);
 			this.Controls.Add(this.textBox1);
 			this.Controls.Add(this.pictureBox4);
 			this.Controls.Add(this.Email);
@@ -222,6 +221,7 @@ namespace eBlank
 			this.TopMost = true;
 			this.Load += new System.EventHandler(this.Login_Load);
 			this.panel1.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -240,11 +240,11 @@ namespace eBlank
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox5;
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Label login_button;
 		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.PictureBox pictureBox6;
 	}
 }
