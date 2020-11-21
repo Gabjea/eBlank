@@ -32,21 +32,21 @@ namespace eBlank
 			this.Email = new System.Windows.Forms.TextBox();
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
-			this.pictureBox5 = new System.Windows.Forms.PictureBox();
+			this.panel1 = new System.Windows.Forms.Panel();
+			this.login_button = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
 			this.pictureBox3 = new System.Windows.Forms.PictureBox();
+			this.button2 = new System.Windows.Forms.Button();
+			this.pictureBox5 = new System.Windows.Forms.PictureBox();
 			this.pictureBox4 = new System.Windows.Forms.PictureBox();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
-			this.panel1 = new System.Windows.Forms.Panel();
-			this.button2 = new System.Windows.Forms.Button();
-			this.login_button = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// Email
@@ -91,17 +91,38 @@ namespace eBlank
 			this.label1.TabIndex = 8;
 			this.label1.Text = "eBlank";
 			// 
-			// pictureBox5
+			// panel1
 			// 
-			this.pictureBox5.Image = global::eBlank.Properties.Resources.BUTON1;
-			this.pictureBox5.Location = new System.Drawing.Point(30, 308);
-			this.pictureBox5.Margin = new System.Windows.Forms.Padding(0);
-			this.pictureBox5.Name = "pictureBox5";
-			this.pictureBox5.Size = new System.Drawing.Size(214, 46);
-			this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox5.TabIndex = 9;
-			this.pictureBox5.TabStop = false;
-			this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+			this.panel1.Controls.Add(this.button2);
+			this.panel1.Location = new System.Drawing.Point(2, 0);
+			this.panel1.Margin = new System.Windows.Forms.Padding(0);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(268, 24);
+			this.panel1.TabIndex = 11;
+			this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+			// 
+			// login_button
+			// 
+			this.login_button.AutoSize = true;
+			this.login_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(79)))), ((int)(((byte)(123)))));
+			this.login_button.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.login_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.login_button.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.login_button.Location = new System.Drawing.Point(112, 319);
+			this.login_button.Name = "login_button";
+			this.login_button.Size = new System.Drawing.Size(61, 22);
+			this.login_button.TabIndex = 13;
+			this.login_button.Text = "Login";
+			this.login_button.Click += new System.EventHandler(this.login_button_Click);
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.Location = new System.Drawing.Point(27, 252);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(0, 18);
+			this.label2.TabIndex = 14;
 			// 
 			// pictureBox3
 			// 
@@ -113,6 +134,34 @@ namespace eBlank
 			this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox3.TabIndex = 5;
 			this.pictureBox3.TabStop = false;
+			// 
+			// button2
+			// 
+			this.button2.FlatAppearance.BorderSize = 0;
+			this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
+			this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
+			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button2.Image = global::eBlank.Properties.Resources.cancel;
+			this.button2.Location = new System.Drawing.Point(245, 1);
+			this.button2.Margin = new System.Windows.Forms.Padding(0);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(23, 23);
+			this.button2.TabIndex = 1;
+			this.button2.UseVisualStyleBackColor = true;
+			this.button2.Click += new System.EventHandler(this.button2_Click);
+			// 
+			// pictureBox5
+			// 
+			this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.pictureBox5.Image = global::eBlank.Properties.Resources.BUTON1;
+			this.pictureBox5.Location = new System.Drawing.Point(30, 308);
+			this.pictureBox5.Margin = new System.Windows.Forms.Padding(0);
+			this.pictureBox5.Name = "pictureBox5";
+			this.pictureBox5.Size = new System.Drawing.Size(214, 46);
+			this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox5.TabIndex = 9;
+			this.pictureBox5.TabStop = false;
+			this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
 			// 
 			// pictureBox4
 			// 
@@ -147,54 +196,6 @@ namespace eBlank
 			this.pictureBox2.TabIndex = 4;
 			this.pictureBox2.TabStop = false;
 			// 
-			// panel1
-			// 
-			this.panel1.Controls.Add(this.button2);
-			this.panel1.Location = new System.Drawing.Point(2, 0);
-			this.panel1.Margin = new System.Windows.Forms.Padding(0);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(268, 24);
-			this.panel1.TabIndex = 11;
-			this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
-			// 
-			// button2
-			// 
-			this.button2.FlatAppearance.BorderSize = 0;
-			this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
-			this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
-			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button2.Image = global::eBlank.Properties.Resources.cancel;
-			this.button2.Location = new System.Drawing.Point(245, 1);
-			this.button2.Margin = new System.Windows.Forms.Padding(0);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(23, 23);
-			this.button2.TabIndex = 1;
-			this.button2.UseVisualStyleBackColor = true;
-			this.button2.Click += new System.EventHandler(this.button2_Click);
-			// 
-			// login_button
-			// 
-			this.login_button.AutoSize = true;
-			this.login_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(79)))), ((int)(((byte)(123)))));
-			this.login_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.login_button.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.login_button.Location = new System.Drawing.Point(112, 319);
-			this.login_button.Name = "login_button";
-			this.login_button.Size = new System.Drawing.Size(61, 22);
-			this.login_button.TabIndex = 13;
-			this.login_button.Text = "Login";
-			this.login_button.Click += new System.EventHandler(this.login_button_Click);
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(27, 252);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(40, 18);
-			this.label2.TabIndex = 14;
-			this.label2.Text = "sdad";
-			// 
 			// Login
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -220,12 +221,12 @@ namespace eBlank
 			this.Text = "Login";
 			this.TopMost = true;
 			this.Load += new System.EventHandler(this.Login_Load);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+			this.panel1.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-			this.panel1.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

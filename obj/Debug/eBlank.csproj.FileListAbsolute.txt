@@ -26,3 +26,4 @@ C:\Users\Ganju\Desktop\eBlank\bin\Debug\MySql.Data.Entity.EF6.dll
 C:\Users\Ganju\Desktop\eBlank\bin\Debug\MySql.Fabric.Plugin.dll
 C:\Users\Ganju\Desktop\eBlank\bin\Debug\MySql.Web.dll
 C:\Users\Ganju\Desktop\eBlank\obj\Debug\eBlank.csproj.CopyComplete
+C:\Users\Ganju\Desktop\eBlank\obj\Debug\eBlank.Home.resources
