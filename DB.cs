@@ -48,32 +48,6 @@ namespace eBlank
 
             }
         }
-        public MySqlConnection getCon()
-        {
-            try
-            {
-                return connection;
-
-
-            }
-            catch (MySqlException ex)
-            {
-                return null;
-            }
-        }
-        public void CloseCon()
-        {
-            try
-            {
-                connection.Close();
-
-
-            }
-            catch (MySqlException ex)
-            {
-
-            }
-        }
         public bool isOpen()
         {
             return connection.State == System.Data.ConnectionState.Open;
