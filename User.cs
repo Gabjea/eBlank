@@ -11,11 +11,17 @@ namespace eBlank
 		private string username,
 					   email,
 					   school,
-					   function; // field
+					   function,
+					   id; // field
 		public string Name   // property
 		{
 			get { return username; }
 			set { username = value; }
+		}
+		public string Id   // property
+		{
+			get { return id; }
+			set { id = value; }
 		}
 		public string Email   // property
 		{

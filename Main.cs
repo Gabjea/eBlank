@@ -156,7 +156,7 @@ namespace eBlank
 		private void button8_Click(object sender, EventArgs e)
 		{
 			ActiveButton(sender, RGBColors.color4);
-			FormOpen(new Todo());
+			FormOpen(new Todo(user));
 		}
 
 		private void button5_Click(object sender, EventArgs e)
