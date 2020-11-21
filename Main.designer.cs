@@ -121,7 +121,7 @@ namespace eBlank
 			// 
 			// pictureBox1
 			// 
-			this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(38)))), ((int)(((byte)(76)))));
+			this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(25)))), ((int)(((byte)(50)))));
 			this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
 			this.pictureBox1.Image = global::eBlank.Properties.Resources.LOGO2;
 			this.pictureBox1.Location = new System.Drawing.Point(0, 0);
