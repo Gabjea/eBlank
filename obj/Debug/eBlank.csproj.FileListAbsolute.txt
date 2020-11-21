@@ -31,3 +31,11 @@ C:\Users\Ganju\Desktop\eBlank\obj\Debug\eBlank.Catalogue.resources
 C:\Users\Ganju\Desktop\eBlank\obj\Debug\eBlank.Classes.resources
 C:\Users\Ganju\Desktop\eBlank\obj\Debug\eBlank.Schedule.resources
 C:\Users\Ganju\Desktop\eBlank\obj\Debug\eBlank.Todo.resources
+C:\Users\bluescreen\Desktop\eBlank\obj\Debug\eBlank.exe.config
+C:\Users\bluescreen\Desktop\eBlank\obj\Debug\eBlank.Catalogue.resources
+C:\Users\bluescreen\Desktop\eBlank\obj\Debug\eBlank.Classes.resources
+C:\Users\bluescreen\Desktop\eBlank\obj\Debug\eBlank.Home.resources
+C:\Users\bluescreen\Desktop\eBlank\obj\Debug\eBlank.Main.resources
+C:\Users\bluescreen\Desktop\eBlank\obj\Debug\eBlank.Schedule.resources
+C:\Users\bluescreen\Desktop\eBlank\obj\Debug\eBlank.Todo.resources
+C:\Users\bluescreen\Desktop\eBlank\obj\Debug\eBlank.csproj.CopyComplete
