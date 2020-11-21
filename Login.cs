@@ -17,6 +17,7 @@ namespace eBlank
 
         DB con = new DB();
         Thread thread;
+        public User usr = new User();
         string invalid_email = "You have entered an invalid e-mail"+ Environment.NewLine+" adress. Please try again.";
         public Login()
         {
@@ -29,8 +30,8 @@ namespace eBlank
 
         private void OpenForm(object obj)
         {
-
-            Application.Run(new Main());
+            
+            Application.Run(new Main(usr));
         }
 
 
@@ -105,6 +106,10 @@ namespace eBlank
             string[] vals = { Email.Text };
             if (textBox1.Text.Equals(con.ReadData(com, param, vals, "password")))
             {
+                usr.Email = textBox1.Text;
+                usr.Function = con.ReadData(com, param, vals, "function");
+                usr.Name = con.ReadData(com, param, vals, "username");
+                usr.School = con.ReadData(com, param, vals, "school");
                 thread = new Thread(OpenForm);
                 thread.SetApartmentState(ApartmentState.STA);
 
