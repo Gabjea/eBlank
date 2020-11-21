@@ -112,7 +112,7 @@ namespace eBlank
 		private void button4_Click(object sender, EventArgs e)
 		{
 			ActiveButton(sender,RGBColors.color1);
-			FormOpen(new Home());
+			FormOpen(new Home(user));
 
 
 		}

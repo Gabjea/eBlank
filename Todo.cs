@@ -77,7 +77,7 @@ namespace eBlank
 
 		private void Todo_Load_1(object sender, EventArgs e)
 		{
-			MessageBox.Show($"Description: {todos[0].description}");
+			
 		}
 	}
 }
