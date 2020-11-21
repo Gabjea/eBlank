@@ -111,6 +111,7 @@ namespace eBlank
                 usr.Name = con.ReadData(com, param, vals, "username");
                 usr.School = con.ReadData(com, param, vals, "school");
                 usr.Id = con.ReadData(com, param, vals, "id");
+                usr.ClasaId = con.ReadData(com, param, vals, "clasa_id");
                 thread = new Thread(OpenForm);
                 thread.SetApartmentState(ApartmentState.STA);
 

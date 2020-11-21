@@ -12,11 +12,17 @@ namespace eBlank
 					   email,
 					   school,
 					   function,
-					   id; // field
+					   id,
+					   clasa; // field
 		public string Name   // property
 		{
 			get { return username; }
 			set { username = value; }
+		}
+		public string ClasaId   // property
+		{
+			get { return clasa; }
+			set { clasa = value; }
 		}
 		public string Id   // property
 		{

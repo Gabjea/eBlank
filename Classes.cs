@@ -16,5 +16,10 @@ namespace eBlank
 		{
 			InitializeComponent();
 		}
+
+		private void Classes_Load(object sender, EventArgs e)
+		{
+			
+		}
 	}
 }
