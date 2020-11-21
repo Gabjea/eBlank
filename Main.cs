@@ -17,7 +17,7 @@ namespace eBlank
 
 		private Button curentbtn;
 		private Panel leftborder;
-
+		private Form currentForm;
 		public Main(User usr)
 		{
 
@@ -119,11 +119,16 @@ namespace eBlank
 
 		private void FormOpen(Form a)
 		{
-			a.Dock = DockStyle.Fill;
-			a.TopLevel = false;
-			a.TopMost = true;
-			this.panel3.Controls.Add(a);
-			a.Show();
+			if (currentForm != null)
+				currentForm.Close();
+			currentForm = a;
+			currentForm.TopLevel = false;
+			currentForm.FormBorderStyle = FormBorderStyle.None;
+			currentForm.Dock = DockStyle.Fill;
+			panel3.Controls.Add(currentForm);
+			panel3.Tag = a;
+			currentForm.BringToFront();
+			currentForm.Show();
 		}
 
 		private void panel4_MouseDown(object sender, MouseEventArgs e)
@@ -150,13 +155,13 @@ namespace eBlank
 		private void button7_Click(object sender, EventArgs e)
 		{
 			ActiveButton(sender, RGBColors.color3);
-			FormOpen(new Schedule());
+			FormOpen(new Schedule(user));
 		}
 
 		private void button8_Click(object sender, EventArgs e)
 		{
 			ActiveButton(sender, RGBColors.color4);
-			FormOpen(new Todo());
+			FormOpen(new Todo(user));
 		}
 
 		private void button5_Click(object sender, EventArgs e)

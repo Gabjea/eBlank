@@ -12,7 +12,7 @@ namespace eBlank
 {
 	public partial class Schedule : Form
 	{
-		public Schedule()
+		public Schedule(User usr)
 		{
 			InitializeComponent();
 		}
@@ -31,5 +31,10 @@ namespace eBlank
         {
 
         }
-    }
+
+		private void Schedule_Load(object sender, EventArgs e)
+		{
+			MessageBox.Show("fut pe mata");
+		}
+	}
 }
