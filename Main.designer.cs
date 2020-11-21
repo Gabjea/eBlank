@@ -30,30 +30,31 @@ namespace eBlank
 		private void InitializeComponent()
 		{
 			this.panel2 = new System.Windows.Forms.Panel();
-			this.button5 = new System.Windows.Forms.Button();
+			this.button8 = new System.Windows.Forms.Button();
+			this.button7 = new System.Windows.Forms.Button();
+			this.button6 = new System.Windows.Forms.Button();
 			this.button4 = new System.Windows.Forms.Button();
-			this.panel4 = new System.Windows.Forms.Panel();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.button5 = new System.Windows.Forms.Button();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.button3 = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
 			this.button1 = new System.Windows.Forms.Button();
-			this.button9 = new System.Windows.Forms.Button();
-			this.button10 = new System.Windows.Forms.Button();
-			this.button11 = new System.Windows.Forms.Button();
 			this.panel2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// panel2
 			// 
 			this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(25)))), ((int)(((byte)(50)))));
-			this.panel2.Controls.Add(this.button11);
-			this.panel2.Controls.Add(this.button10);
-			this.panel2.Controls.Add(this.button9);
-			this.panel2.Controls.Add(this.button5);
+			this.panel2.Controls.Add(this.button8);
+			this.panel2.Controls.Add(this.button7);
+			this.panel2.Controls.Add(this.button6);
 			this.panel2.Controls.Add(this.button4);
-			this.panel2.Controls.Add(this.panel4);
+			this.panel2.Controls.Add(this.pictureBox1);
+			this.panel2.Controls.Add(this.button5);
 			this.panel2.Cursor = System.Windows.Forms.Cursors.Arrow;
 			this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
 			this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -61,7 +62,75 @@ namespace eBlank
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(160, 750);
 			this.panel2.TabIndex = 1;
-			this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+			// 
+			// button8
+			// 
+			this.button8.Dock = System.Windows.Forms.DockStyle.Top;
+			this.button8.FlatAppearance.BorderSize = 0;
+			this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button8.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button8.ForeColor = System.Drawing.Color.White;
+			this.button8.Location = new System.Drawing.Point(0, 365);
+			this.button8.Name = "button8";
+			this.button8.Size = new System.Drawing.Size(160, 81);
+			this.button8.TabIndex = 8;
+			this.button8.Text = "To-do";
+			this.button8.UseVisualStyleBackColor = true;
+			// 
+			// button7
+			// 
+			this.button7.Dock = System.Windows.Forms.DockStyle.Top;
+			this.button7.FlatAppearance.BorderSize = 0;
+			this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button7.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button7.ForeColor = System.Drawing.Color.White;
+			this.button7.Location = new System.Drawing.Point(0, 284);
+			this.button7.Name = "button7";
+			this.button7.Size = new System.Drawing.Size(160, 81);
+			this.button7.TabIndex = 7;
+			this.button7.Text = "Schedule";
+			this.button7.UseVisualStyleBackColor = true;
+			// 
+			// button6
+			// 
+			this.button6.Dock = System.Windows.Forms.DockStyle.Top;
+			this.button6.FlatAppearance.BorderSize = 0;
+			this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button6.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button6.ForeColor = System.Drawing.Color.White;
+			this.button6.Location = new System.Drawing.Point(0, 203);
+			this.button6.Name = "button6";
+			this.button6.Size = new System.Drawing.Size(160, 81);
+			this.button6.TabIndex = 6;
+			this.button6.Text = "Classes";
+			this.button6.UseVisualStyleBackColor = true;
+			// 
+			// button4
+			// 
+			this.button4.Dock = System.Windows.Forms.DockStyle.Top;
+			this.button4.FlatAppearance.BorderSize = 0;
+			this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button4.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button4.ForeColor = System.Drawing.Color.White;
+			this.button4.Location = new System.Drawing.Point(0, 122);
+			this.button4.Name = "button4";
+			this.button4.Size = new System.Drawing.Size(160, 81);
+			this.button4.TabIndex = 5;
+			this.button4.Text = "Home";
+			this.button4.UseVisualStyleBackColor = true;
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(38)))), ((int)(((byte)(76)))));
+			this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+			this.pictureBox1.Image = global::eBlank.Properties.Resources.LOGO2;
+			this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(160, 122);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+			this.pictureBox1.TabIndex = 4;
+			this.pictureBox1.TabStop = false;
+			this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
 			// 
 			// button5
 			// 
@@ -74,36 +143,8 @@ namespace eBlank
 			this.button5.Name = "button5";
 			this.button5.Size = new System.Drawing.Size(160, 81);
 			this.button5.TabIndex = 3;
-			this.button5.Text = "button5";
 			this.button5.UseVisualStyleBackColor = true;
 			this.button5.Click += new System.EventHandler(this.button5_Click);
-			// 
-			// button4
-			// 
-			this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-			this.button4.FlatAppearance.BorderSize = 0;
-			this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button4.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button4.ForeColor = System.Drawing.Color.White;
-			this.button4.Location = new System.Drawing.Point(0, 149);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(160, 81);
-			this.button4.TabIndex = 0;
-			this.button4.Text = "Home";
-			this.button4.UseVisualStyleBackColor = true;
-			this.button4.Click += new System.EventHandler(this.button4_Click);
-			// 
-			// panel4
-			// 
-			this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(25)))), ((int)(((byte)(50)))));
-			this.panel4.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel4.Location = new System.Drawing.Point(0, 0);
-			this.panel4.Margin = new System.Windows.Forms.Padding(0);
-			this.panel4.Name = "panel4";
-			this.panel4.Size = new System.Drawing.Size(160, 149);
-			this.panel4.TabIndex = 2;
-			this.panel4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel4_MouseDown);
 			// 
 			// panel3
 			// 
@@ -173,48 +214,6 @@ namespace eBlank
 			this.button1.UseVisualStyleBackColor = true;
 			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
-			// button9
-			// 
-			this.button9.Dock = System.Windows.Forms.DockStyle.Top;
-			this.button9.FlatAppearance.BorderSize = 0;
-			this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button9.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button9.ForeColor = System.Drawing.Color.White;
-			this.button9.Location = new System.Drawing.Point(0, 230);
-			this.button9.Name = "button9";
-			this.button9.Size = new System.Drawing.Size(160, 81);
-			this.button9.TabIndex = 8;
-			this.button9.Text = "Classes";
-			this.button9.UseVisualStyleBackColor = true;
-			// 
-			// button10
-			// 
-			this.button10.Dock = System.Windows.Forms.DockStyle.Top;
-			this.button10.FlatAppearance.BorderSize = 0;
-			this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button10.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button10.ForeColor = System.Drawing.Color.White;
-			this.button10.Location = new System.Drawing.Point(0, 311);
-			this.button10.Name = "button10";
-			this.button10.Size = new System.Drawing.Size(160, 81);
-			this.button10.TabIndex = 9;
-			this.button10.Text = "Schedule";
-			this.button10.UseVisualStyleBackColor = true;
-			// 
-			// button11
-			// 
-			this.button11.Dock = System.Windows.Forms.DockStyle.Top;
-			this.button11.FlatAppearance.BorderSize = 0;
-			this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button11.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button11.ForeColor = System.Drawing.Color.White;
-			this.button11.Location = new System.Drawing.Point(0, 392);
-			this.button11.Name = "button11";
-			this.button11.Size = new System.Drawing.Size(160, 81);
-			this.button11.TabIndex = 10;
-			this.button11.Text = "To-do";
-			this.button11.UseVisualStyleBackColor = true;
-			// 
 			// Main
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,6 +228,7 @@ namespace eBlank
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Main";
 			this.panel2.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.panel1.ResumeLayout(false);
 			this.ResumeLayout(false);
 
@@ -237,15 +237,15 @@ namespace eBlank
 		#endregion
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.Panel panel3;
-		private System.Windows.Forms.Panel panel4;
-		private System.Windows.Forms.Button button4;
 		private System.Windows.Forms.Button button5;
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Button button3;
 		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.Button button11;
-		private System.Windows.Forms.Button button10;
-		private System.Windows.Forms.Button button9;
+		private System.Windows.Forms.Button button7;
+		private System.Windows.Forms.Button button6;
+		private System.Windows.Forms.Button button4;
+		private System.Windows.Forms.PictureBox pictureBox1;
+		private System.Windows.Forms.Button button8;
 	}
 }

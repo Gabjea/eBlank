@@ -61,6 +61,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Catalogue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogue.Designer.cs">
+      <DependentUpon>Catalogue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes.Designer.cs">
+      <DependentUpon>Classes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Schedule.Designer.cs">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Todo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Todo.Designer.cs">
+      <DependentUpon>Todo.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
     <Compile Include="DB.cs" />
     <Compile Include="Home.cs">
@@ -83,6 +107,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Catalogue.resx">
+      <DependentUpon>Catalogue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes.resx">
+      <DependentUpon>Classes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +132,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Schedule.resx">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Todo.resx">
+      <DependentUpon>Todo.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -126,6 +162,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\cancel.png" />
+    <None Include="Resources\LOGO2.png" />
+    <None Include="Resources\LOGO1.png" />
     <None Include="Resources\minus.png" />
     <None Include="Resources\multi-tab.png" />
     <None Include="Resources\cancel1.png" />
