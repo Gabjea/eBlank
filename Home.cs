@@ -44,13 +44,63 @@ namespace eBlank
 
 		private void Home_Load(object sender, EventArgs e)
 		{
-			//CenterControl(label1);
+			GetHour();
+			LoadTodo();
+			LoadTests();
+			
 		}
 
-		private void GetNextClass()
+		private void LoadTodo()
 		{
-			DateTime myDate = DateTime.ParseExact(DateTime.Now.ToString("dd MMMM yyyy").ToString(), "yyyy-MM-dd HH:mm:ss,fff",
-									   System.Globalization.CultureInfo.InvariantCulture);
+			con.OpenCon();
+			string cmd = "SELECT * FROM todo WHERE user_id=@clasa_id";
+
+			MySqlCommand command = new MySqlCommand(cmd, con.getCon());
+
+			command.Parameters.AddWithValue("@clasa_id", user.ClasaId);
+
+			using (MySqlDataReader reader = command.ExecuteReader())
+			{
+
+
+
+				while (reader.Read())
+				{
+
+					
+
+
+				}
+				
+
+			}
+			con.CloseCon();
+		}
+		private void LoadTests()
+		{
+
+		}
+
+		private int GetNextClass()
+		{
+			for(int i = 0; i < ore.Length; i++)
+			{
+				//DateTime myDate = DateTime.ParseExact($"{DateTime.Now.ToString("dd MMMM yyyy")} {ore[i]}", "dd MMMM yyyy HH:mm",
+				//						   System.Globalization.CultureInfo.InvariantCulture);
+
+
+				DateTime myDate = Convert.ToDateTime($"{DateTime.Now.ToString("dd MMMM yyyy")} {ore[i]}");
+				DateTime now = DateTime.Now;
+				if (myDate.Subtract(now).TotalHours>0 && (myDate.Subtract(now).TotalHours<1))
+				{
+					return i;
+				}
+			}
+
+			return -1;
+			
+
+
 
 		}
 
@@ -87,8 +137,9 @@ namespace eBlank
 
 		}
 
-		private string GetClassLink()
+		private string GetClassLink(int i)
 		{
+			
 
 			con.OpenCon();
 			string cmd = "SELECT * FROM materii WHERE clasa_id=@clasa_id";
@@ -104,22 +155,27 @@ namespace eBlank
 
 				if (reader.Read())
 				{
-					con.CloseCon();
-					return reader[nextclass].ToString();
+					
+					return reader[i+1].ToString();
 
 
 				}
 				else return "";
 
 			}
-
+			con.CloseCon();
 
 
 		}
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			System.Diagnostics.Process.Start(GetClassLink());
+			System.Diagnostics.Process.Start(GetClassLink(GetNextClass()));
+		}
+
+		private void panel4_Paint(object sender, PaintEventArgs e)
+		{
+
 		}
 	}
 }
