@@ -139,11 +139,11 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pmain.resx">
-      <DependentUpon>Pmain.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pmain.resx">
+      <DependentUpon>Pmain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -179,10 +179,15 @@
     <None Include="Resources\BUTON1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\galben.png" />
+    <None Include="Resources\port1.png" />
+    <None Include="Resources\mov.png" />
+    <None Include="Resources\port.png" />
     <None Include="Resources\class_pane2.png" />
     <None Include="Resources\class_pane11.png" />
     <None Include="Resources\LOGO.png" />
     <None Include="Resources\Asset 1%402x.png" />
+    <None Include="Resources\blue.png" />
     <Content Include="Resources\cancel.png" />
     <None Include="Resources\LOGO2.png" />
     <None Include="Resources\LOGO1.png" />
