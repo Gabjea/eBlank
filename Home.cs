@@ -25,6 +25,12 @@ namespace eBlank
 			InitializeComponent();
 			timer1.Start();
 			user = usr;
+			Label[] todos = { label4, label5, label6, label7 };
+			Label[] test_name = { label9, label10, label12, label14 };
+			Label[] test_mat = { label8, label11, label13, label15 };
+			Label[] test_date = { label16, label17, label18, label19 };
+			LoadTodo(todos);
+			LoadTests(test_name,test_mat,test_date);
 		}
 
 		private void timer1_Tick(object sender, EventArgs e)
@@ -45,15 +51,39 @@ namespace eBlank
 		private void Home_Load(object sender, EventArgs e)
 		{
 			GetHour();
-			LoadTodo();
-			LoadTests();
+			
+		
 			
 		}
 
-		private void LoadTodo()
+		private void LoadTodo(Label[] lb)
 		{
 			con.OpenCon();
-			string cmd = "SELECT * FROM todo WHERE user_id=@clasa_id";
+			string cmd = "SELECT * FROM todo WHERE class_id=@class_id AND done=0";
+
+			MySqlCommand command = new MySqlCommand(cmd, con.getCon());
+
+			command.Parameters.AddWithValue("@class_id", user.ClasaId);
+
+			using (MySqlDataReader reader = command.ExecuteReader())
+			{
+
+				int k = 0;
+				while(reader.Read())
+				{
+					lb[k++].Text = reader[1].ToString();
+				}
+
+				
+				
+
+			}
+			con.CloseCon();
+		}
+		private void LoadTests(Label[] name, Label[] mat, Label[] date)
+		{
+			con.OpenCon();
+			string cmd = "SELECT * FROM tests WHERE clasa_id=@clasa_id AND open=1";
 
 			MySqlCommand command = new MySqlCommand(cmd, con.getCon());
 
@@ -62,47 +92,21 @@ namespace eBlank
 			using (MySqlDataReader reader = command.ExecuteReader())
 			{
 
-
-
+				int k = 0;
 				while (reader.Read())
 				{
-
-					
-
-
+					name[k].Text = reader[1].ToString();
+					mat[k].Text = reader[3].ToString();
+					date[k++].Text = reader[4].ToString();
 				}
-				
+
+
+
 
 			}
 			con.CloseCon();
 		}
-		private void LoadTests()
-		{
 
-		}
-
-		private int GetNextClass()
-		{
-			for(int i = 0; i < ore.Length; i++)
-			{
-				//DateTime myDate = DateTime.ParseExact($"{DateTime.Now.ToString("dd MMMM yyyy")} {ore[i]}", "dd MMMM yyyy HH:mm",
-				//						   System.Globalization.CultureInfo.InvariantCulture);
-
-
-				DateTime myDate = Convert.ToDateTime($"{DateTime.Now.ToString("dd MMMM yyyy")} {ore[i]}");
-				DateTime now = DateTime.Now;
-				if (myDate.Subtract(now).TotalHours>0 && (myDate.Subtract(now).TotalHours<1))
-				{
-					return i;
-				}
-			}
-
-			return -1;
-			
-
-
-
-		}
 
 		private string GetHour()
 		{
@@ -137,17 +141,39 @@ namespace eBlank
 
 		}
 
-		private string GetClassLink(int i)
+		private int GetNextClass()
 		{
+			for(int i = 0; i < ore.Length; i++)
+			{
+				//DateTime myDate = DateTime.ParseExact($"{DateTime.Now.ToString("dd MMMM yyyy")} {ore[i]}", "dd MMMM yyyy HH:mm",
+				//						   System.Globalization.CultureInfo.InvariantCulture);
+
+				
+				DateTime myDate = Convert.ToDateTime($"{DateTime.Now.ToString("dd MMMM yyyy")} {ore[i]}");
+				DateTime now = DateTime.Now;
+				if (myDate.Subtract(now).TotalHours>0 && (myDate.Subtract(now).TotalHours<1))
+				{
+					return ++i;
+				}
+			}
+
+			return -1;
 			
 
-			con.OpenCon();
-			string cmd = "SELECT * FROM materii WHERE clasa_id=@clasa_id";
+
+
+		}
+
+		private string GetClassLinkFromName(string n)
+		{
+			
+			string cmd = "SELECT * FROM materii WHERE clasa_id=@clasa_id AND nume=@name";
 
 			MySqlCommand command = new MySqlCommand(cmd, con.getCon());
 
 			command.Parameters.AddWithValue("@clasa_id", user.ClasaId);
-	
+			command.Parameters.AddWithValue("@name", n);
+
 			using (MySqlDataReader reader = command.ExecuteReader())
 			{
 
@@ -155,12 +181,42 @@ namespace eBlank
 
 				if (reader.Read())
 				{
+					return reader["link"].ToString();
+
+				}
+				else return "https://classroom.google.com";
+
+			}
+
+			
+		}
+
+		private string GetClassLink(int i)
+		{
+			
+			if (i < 0)
+				return "https://classroom.google.com";
+			con.OpenCon();
+			string cmd = "SELECT * FROM orar WHERE clasa_id=@clasa_id AND ziua=@day";
+
+			MySqlCommand command = new MySqlCommand(cmd, con.getCon());
+
+			command.Parameters.AddWithValue("@clasa_id", user.ClasaId);
+			command.Parameters.AddWithValue("@day", DateTime.Now.ToString("dddd"));
+	
+			using (MySqlDataReader reader = command.ExecuteReader())
+			{
+
+				
+
+				if (reader.Read())
+				{
 					
-					return reader[i+1].ToString();
+					return reader[i].ToString();
 
 
 				}
-				else return "";
+				else return "https://classroom.google.com";
 
 			}
 			con.CloseCon();
@@ -170,7 +226,7 @@ namespace eBlank
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			System.Diagnostics.Process.Start(GetClassLink(GetNextClass()));
+			System.Diagnostics.Process.Start(GetClassLinkFromName(GetClassLink(GetNextClass())));
 		}
 
 		private void panel4_Paint(object sender, PaintEventArgs e)
