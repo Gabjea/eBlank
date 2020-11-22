@@ -207,19 +207,21 @@ namespace eBlank
 			using (MySqlDataReader reader = command.ExecuteReader())
 			{
 
-				
+
 
 				if (reader.Read())
 				{
-					
+
 					return reader[i].ToString();
 
 
 				}
-				else return "https://classroom.google.com";
+				else { 
+					con.CloseCon();
 
+					return "https://classroom.google.com";
+				}
 			}
-			con.CloseCon();
 
 
 		}

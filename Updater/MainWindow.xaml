@@ -1,0 +1,16 @@
+﻿<Window x:Class="Updater.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Updater"
+        mc:Ignorable="d"
+        Title="eBlank Updater
+        " Height="400.638" Width="292.602">
+    <Grid Background="#FF22264C">
+        <Image  Stretch="Fill" Margin="91,37,92,228" Source="LOGO2.png"/>
+        <Label Name="uplabel"  Content="Label" HorizontalAlignment="Center" Margin="80,304,23,21" VerticalAlignment="Center" RenderTransformOrigin="0.505,0.555" Width="182" FontFamily="Montserrat SemiBold" FontSize="13" Height="45" Foreground="White"/>
+
+    </Grid>
+
+</Window>

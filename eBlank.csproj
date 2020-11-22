@@ -67,6 +67,12 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Assigments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assigments.Designer.cs">
+      <DependentUpon>Assigments.cs</DependentUpon>
+    </Compile>
     <Compile Include="Catalogue.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assigments.resx">
+      <DependentUpon>Assigments.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Catalogue.resx">
       <DependentUpon>Catalogue.cs</DependentUpon>
