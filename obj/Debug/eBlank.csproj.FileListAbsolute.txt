@@ -43,3 +43,4 @@ C:\Users\Ganju\Desktop\eBlank\obj\Debug\eBlank.Pmain.resources
 C:\Users\Ganju\Desktop\eBlank\obj\Debug\eBlank.Admin.resources
 C:\Users\bluescreen\Desktop\eBlank\obj\Debug\eBlank.Admin.resources
 C:\Users\bluescreen\Desktop\eBlank\obj\Debug\eBlank.Pmain.resources
+C:\Users\Ganju\Desktop\eBlank\obj\Debug\eBlank.Assigments.resources

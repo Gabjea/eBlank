@@ -188,6 +188,9 @@
     <None Include="Resources\BUTON1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Untitled-6.png" />
+    <None Include="Resources\tg.png" />
+    <None Include="Resources\p.png" />
     <None Include="Resources\galben.png" />
     <None Include="Resources\port1.png" />
     <None Include="Resources\mov.png" />
@@ -197,6 +200,9 @@
     <None Include="Resources\LOGO.png" />
     <None Include="Resources\Asset 1%402x.png" />
     <None Include="Resources\blue.png" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\8.png" />
+    <None Include="Resources\bt.png" />
     <Content Include="Resources\cancel.png" />
     <None Include="Resources\LOGO2.png" />
     <None Include="Resources\LOGO1.png" />
