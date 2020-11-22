@@ -28,13 +28,6 @@ namespace eBlank
 
 
 
-        private void OpenForm(object obj)
-        {
-            
-            Application.Run(new Main(usr));
-        }
-
-
 
         
 
@@ -93,6 +86,14 @@ namespace eBlank
             label2.ForeColor = c;
             label2.Text = m;
 		}
+
+        private void OpenForm(object obj)
+        {
+            if (usr.Function == "elev")
+                Application.Run(new Main(usr));
+            else Application.Run(new Pmain(usr));
+        }
+
 
         private void login()
 		{
