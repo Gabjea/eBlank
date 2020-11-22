@@ -51,9 +51,10 @@ namespace eBlank
 		private void Home_Load(object sender, EventArgs e)
 		{
 			GetHour();
-			
-		
-			
+
+			label21.Text = GetClassLink(GetNextClass());
+
+
 		}
 
 		private void LoadTodo(Label[] lb)
@@ -153,6 +154,7 @@ namespace eBlank
 				DateTime now = DateTime.Now;
 				if (myDate.Subtract(now).TotalHours>0 && (myDate.Subtract(now).TotalHours<1))
 				{
+					
 					return ++i;
 				}
 			}
@@ -166,7 +168,7 @@ namespace eBlank
 
 		private string GetClassLinkFromName(string n)
 		{
-			
+			con.OpenCon();
 			string cmd = "SELECT * FROM materii WHERE clasa_id=@clasa_id AND nume=@name";
 
 			MySqlCommand command = new MySqlCommand(cmd, con.getCon());
@@ -211,29 +213,61 @@ namespace eBlank
 
 				if (reader.Read())
 				{
-
-					return reader[i].ToString();
-
-
-				}
-				else { 
+					string aux = reader[i].ToString();
 					con.CloseCon();
+					
+					return aux;
 
-					return "https://classroom.google.com";
 				}
+				else {
+					con.CloseCon();
+					return "https://classroom.google.com"; }
+
+
 			}
+			
 
 
 		}
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			System.Diagnostics.Process.Start(GetClassLinkFromName(GetClassLink(GetNextClass())));
+			
 		}
 
 		private void panel4_Paint(object sender, PaintEventArgs e)
 		{
 
+		}
+
+        private void panel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label20_Click(object sender, EventArgs e)
+        {
+
+        }
+
+		private void panel1_Paint(object sender, PaintEventArgs e)
+		{
+			
+		}
+
+		private void label21_Click(object sender, EventArgs e)
+		{
+			System.Diagnostics.Process.Start(GetClassLinkFromName(GetClassLink(GetNextClass())));
+		}
+
+		private void panel1_Click(object sender, EventArgs e)
+		{
+			System.Diagnostics.Process.Start(GetClassLinkFromName(GetClassLink(GetNextClass())));
 		}
 	}
 }
